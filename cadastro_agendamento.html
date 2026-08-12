@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="width=device-width, initial-scale=1.0">
@@ -8,57 +9,60 @@
     <link rel="stylesheet" href="salao.css">
 
 </head>
-    
+
 <body>
 
-  <h2>AGENDAMENTO</h2>
-<ul class="menu">
-    <li> <a href="index.html" target="principal"> PÁGINA INICIAL</a></li>
-</ul>  
+    <h2>AGENDAMENTO</h2>
+    <ul class="menu">
+        <li> <a href="index.html" target="principal"> PÁGINA INICIAL</a></li>
+    </ul>
 
-<fieldset>
-    <legend> <strong>DADOS DO AGENDAMENTO</strong></legend>
-    <form onabort="cadastrarAgendamento()"; return false;></form>
+    <fieldset>
+        <legend> <strong>DADOS DO AGENDAMENTO</strong></legend>
+        <form onabort="cadastrarAgendamento()" ; return false;></form>
 
 
-<legend> <strong>Nome do Cliente </strong></legend> <br>
-<input type="text" id="nome" style="width: 98%; padding:10px;" required> <br><br>
+        <legend> <strong>Nome do Cliente </strong></legend> <br>
+        <input type="text" id="nome" style="width: 98%; padding:10px;" required> <br><br>
 
-<label> <strong>Porfissioanl Preferido</strong></label>
-<select id=" profissional">
-    <option value="Carlos (Cabeleireiro)"> Carlos (Cabeleireiro)</option>
-    <option value="Mariana (Cabeleireira)"> Mariana (Cabeleireira)</option>
-    <option value="Roberto (Barbeiro)"> Roberto (Barbeiro)</option>
-    <option value="Ana (Esteticista)"> Ana (esteticista)</option>
-    <option value="Indiferente"> Indiferente</option>
-</select> 
-    
-    <hr>
-    <label> <strong>Sexo</strong></label>
-    <input type="radio" name="sexo" value="Masculino"> Masculino
-    <input type="radio" name="sexo" value="Masculino"> Feminino <br><br>
-    </hr>
+        <hr>
+        <label> <strong>Porfissioanl Preferido</strong></label>
+        <select id=" profissional">
+            <option value="Carlos (Cabeleireiro)"> Carlos (Cabeleireiro)</option>
+            <option value="Mariana (Cabeleireira)"> Mariana (Cabeleireira)</option>
+            <option value="Roberto (Barbeiro)"> Roberto (Barbeiro)</option>
+            <option value="Ana (Esteticista)"> Ana (esteticista)</option>
+            <option value="Indiferente"> Indiferente</option>
+        </select>
+        </hr>
 
-    <label> <strong>Serviços Desejados </strong></label>
+        <hr>
+        <label> <strong>Sexo</strong></label>
+        <input type="radio" name="sexo" value="Masculino"> Masculino
+        <input type="radio" name="sexo" value="Masculino"> Feminino <br><br>
+        </hr>
 
-    <input type="checkbox" class="serv" value="Corte">Corte de cabelo
-    <input type="checkbox" class="serv" value="barba">Barba
-    <input type="checkbox" class="serv" value="Coloração">Coloração
-    <input type="checkbox" class="serv" value="Escova">Escova
-    <input type="checkbox" class="serv" value="Escova/Hidratação">Hidratação
-    <input type="checkbox" class="serv" value="Manicure">Manicure
+        <label> <strong>Serviços Desejados </strong></label>
 
-    <label> <strong>Data do atendimento: </strong></label><br><br>
-    <input type="date" id="data" required><br><br>
+        <input type="checkbox" class="serv" value="Corte">Corte de cabelo
+        <input type="checkbox" class="serv" value="barba">Barba
+        <input type="checkbox" class="serv" value="Coloração">Coloração
+        <input type="checkbox" class="serv" value="Escova">Escova
+        <input type="checkbox" class="serv" value="Escova/Hidratação">Hidratação
+        <input type="checkbox" class="serv" value="Manicure">Manicure
 
-    <label> <strong> Horário</strong></label>
-    <input type="time" id="horario" style="padding: 8px;" required> <br><br>
+        <label> <strong>Data do atendimento: </strong></label><br><br>
+        <input type="date" id="data" required><br><br>
 
-    <input class="botao" type="submit" value="CONFIRMAR AGENDAMENTO">
+        <label> <strong> Horário</strong></label>
+        <input type="time" id="horario" style="padding: 8px;" required> <br><br>
 
-</form>
+        <input class="botao" type="submit" value="CONFIRMAR AGENDAMENTO">
 
-</fieldset>
+        </form>
+
+    </fieldset>
 
 </body>
+
 </html>
