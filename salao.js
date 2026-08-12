@@ -14,10 +14,10 @@ function cadastrarAgendamento() {
 
     let listaservicos = [];
 
-    sevicos.forEach(function(servicos)){
-
-        listaservicos.push(servicos.value)
-    }
+    sevicos.forEach(function(servicos) { 
+        listaservicos.push(servicos.value) 
+        
+    });
 
     localStorage.setItem ("nomeCliente",nome);
     localStorage.setItem ("professional",professional);
