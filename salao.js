@@ -1,4 +1,4 @@
-function cadastroagendamento() {
+function cadastrarAgendamento() {
 
     let nome=document.getElementByID("nome").value;
 
