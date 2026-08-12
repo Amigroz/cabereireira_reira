@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Amigroz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comprovante de AGENDAMENTO/title>
+    <link rel="stylesheet" href="comprovante.css" >
+  </head>
+
+  <body>
+    
+    <div id="resultado"></div>
+
+    <script>
+
+        //lincagem do salao.js
+        //
+        let nomeCliente = localStorage.getItem("nomeCliente") || "Não Informado";
+        let profissional = localStorage.getItem("profissional") || "Não Informado";
+        let sexoCliente = localStorage.getItem("sexoCliente") || "Não Informado";
+        let listaServicos = localStorage.getItem("listaServicos") || "Não Informado";
+        let dataAtendimento = localStorage.getItem("data") || "Não Informado";
+        let horarioAtendimento = localStorage.getItem("horário") || "Não Informado";
+        
+        let areaResultado = document.getElementById("resultado");
+
+        areaResultado.innerHTML = `
+        <div class= "comprovante">
+            <h3 class="titulo-comprovante">
+                Comprovante de Agendamento - Cabeleireira Reira
+            </h3>
+
+            <hr>
+            <!-- Exibe os dados da empresa -->
+            <p><strong> Cliente: </strong> ${nomeCliente} </p>
+            <p><strong> Porfissioanl: </strong> ${profissional} </p>
+            <p><strong> Sexo: </strong> ${sexoCliente} </p>
+            <p><strong> Serviços: </strong> ${listaServicos} </p>
+            <p><strong> Data de Atendimento: </strong> ${dataAtendimento} </p>
+            <p><strong> Horário de Atendimento: </strong> ${horarioAtendimento} </p>
+
+            <button onclick="Window.print()" class="botao">
+                Imprimir comprovante
+            </button>
+
+            <br><br>
+            <a href="cadastro_agendamento.html" style="color: #ad1457; font-weight": bold;
+            text-decoration: none;>Voltar para Cadastrar</a>
+            </hr>
+            
+                
+        </div>
+        
+        `;
+    </script>
+
+  </body>
+
+</html>
